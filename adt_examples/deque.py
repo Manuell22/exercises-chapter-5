@@ -54,7 +54,7 @@ class Deque:
         if self.front == 0:
             self.front = self.size - 1
         else:
-            self.front -= 1      
+            self.front -= 1
         return temp
 
     def peek(self):
@@ -79,9 +79,10 @@ class Deque:
                 count += 1
         return count
 
-def __iter__(self):
-    return self
+    def __iter__(self):
+        return self
 
-def __next__(self):
-    length = len(self)
-    self.a = self.deque[self.front]
+    def __next__(self):
+        length = len(self)
+        self.a = self.deque[self.front]
+        self.b = self.deque[self.front]
